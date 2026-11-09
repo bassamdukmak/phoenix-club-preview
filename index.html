@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phoenix United — Hero & matchday review</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <a href="#review-content" class="skip">Skip to review</a>
+  <header class="review-header">
+    <a class="review-brand" href="#preview"><img src="assets/phoenix-crest.svg" alt="Phoenix United crest" width="34" height="42"><span>Phoenix United <small>Hero & matchday review</small></span></a>
+    <span class="private-label">Review preview · Saved fixtures</span>
+  </header>
+  <nav class="review-nav" aria-label="Review sections">
+    <a href="#preview">Website preview</a><a href="#shortlist">10 photo choices</a><a href="#video">Video option</a><a href="#plan">Research & plan</a>
+  </nav>
+  <main id="review-content">
+    
+    <section id="preview" class="review-section">
+      <div class="review-intro"><div><h1>A real club.<br>A real first impression.</h1><p>Try the supplied photography in the Club hero, then explore the fixture calendar with saved UAEFA results below it.</p></div><a class="quiet-link" href="#plan">Read the implementation plan</a></div>
+      <div class="preview-toolbar">
+        <label>Hero photograph<select id="hero-choice" aria-label="Choose hero photograph"></select></label>
+        <fieldset><legend>Composition</legend><button type="button" data-layout="split" aria-pressed="false">Split</button><button type="button" data-layout="wide" aria-pressed="true">Wide crop</button></fieldset>
+        <fieldset><legend>Viewport</legend><button type="button" data-size="desktop" aria-pressed="true">Desktop</button><button type="button" data-size="phone" aria-pressed="false">Phone</button></fieldset>
+        <label id="crop-control">Vertical crop<input id="crop" type="range" min="0" max="100" value="56"></label>
+      </div>
+      <p class="photo-caption" id="selected-caption"></p>
+      <div class="website-preview" id="website-preview">
+        <header class="club-header"><img src="assets/phoenix-united-wordmark.svg" alt="Phoenix United" width="200" height="32"><nav aria-label="Club preview"><span aria-current="page">Club</span><a href="#fixtures">Fixtures</a></nav><span class="club-place">Dubai, UAE</span></header>
+        <section class="hero wide" id="hero" aria-labelledby="hero-title">
+          <div class="hero-photo"><img id="hero-photo" src="media/DSC09915.jpg" alt="Phoenix players in the black away kit gathered around a sofa and football" width="2048" height="2560" fetchpriority="high"></div>
+          <div class="hero-copy"><img src="assets/arabic-slogan-transparent.png" class="slogan" alt="Strive to Rise in Arabic" width="420" height="284"><h2 id="hero-title">Built<br>to rise.</h2><p>The person before the player. Developing footballers, building futures and creating pathways beyond the pitch.</p><div class="hero-actions"><a href="https://phoenixutd.com/pathway#assessment" class="gold-button" target="_blank" rel="noreferrer">Start Your Pathway</a><a href="#fixtures" class="outline-button">View Fixtures</a></div></div>
+          <p class="license">UAE FA Licensed <span>Dubai, UAE</span></p>
+        </section>
+        <section id="fixtures" class="fixture-section" aria-labelledby="fixtures-title">
+          <header class="fixture-heading"><div><h2 id="fixtures-title">2026/27<br>League Fixtures</h2><p>Third Division League · First Group</p></div><div class="fixture-identity"><img src="assets/phoenix-crest.svg" alt="" width="45" height="55"><p><strong>Phoenix United FC</strong><span id="fixture-count">Checking the season…</span></p></div></header>
+          <div class="fixture-tools"><p>Scroll horizontally to view the full season.</p><button id="past-toggle" class="past-button" aria-expanded="false" aria-controls="past-matches">View past matches <span id="past-count"></span></button><div class="scroll-controls"><button type="button" id="previous-fixture" aria-label="Scroll to previous fixtures">←</button><button type="button" id="next-fixture" aria-label="Scroll to next fixtures">→</button></div></div>
+          <div id="match-strip" class="match-strip" role="region" tabindex="0" aria-label="Latest and upcoming Phoenix fixtures"><p class="loading-text">Loading official fixtures…</p></div>
+          <section id="past-matches" class="past-matches" aria-labelledby="past-title" hidden><header><h3 id="past-title">This season’s results</h3><p>Newest first · Official UAEFA results</p></header><div id="past-strip" class="match-strip" role="region" tabindex="0" aria-label="Completed Phoenix matches"></div></section>
+          <footer class="source-line"><p id="feed-status" role="status">Connecting to UAEFA…</p><a href="https://www.uaefa.ae/" target="_blank" rel="noreferrer">Scores & fixtures: UAEFA</a><a href="https://www.uaefa.ae/en/footer/Terms_and_conditions" target="_blank" rel="noreferrer">Source terms</a><button id="refresh-feed" type="button">Check now</button></footer>
+        </section>
+      </div>
+      <p class="review-note">Local review: the hero and fixture section are placed together so you can review them quickly. On the live Club page, the fixtures remain in their existing position below the club content. Goal-to-screen delay still needs a real matchday check.</p>
+    </section>
+
+    <section id="shortlist" class="review-section shortlist-section">
+      <div class="review-intro"><div><h2>Ten photographs.<br>Ten ways to open.</h2><p>Ranked for club identity, composition, recognisable kit and a useful desktop/mobile treatment. Each choice previews in the hero above.</p></div><p class="short-note">From your shared photoshoot.<br>Original filenames preserved.</p></div>
+      <div id="photo-grid" class="photo-grid"></div>
+      <details class="reviewed-details"><summary>What was reviewed, and what was left out</summary><p>I visually compared all 10 direct group photos, all 19 freestyle photos, all 28 high-angle images, and 11 distinct classic away-kit photographs (plus their available PNG variants). This is a curated shortlist from those sets, not a claim to have inspected every file in the shared folder. Headshots and product-only photos are less suited to this homepage brief and were deprioritised.</p><p>The high-angle images use a strong red photographic treatment, which pulls away from Phoenix’s black/gold visual identity. The classic white-background photos are useful for squad pages; one rear-shirt photograph is included as a real alternative to the current AI player concept.</p><p>These local files are SharePoint’s downloaded image previews, generally up to 2048 × 2560. Once a photo is selected, use the matching original from SharePoint for the production export. The existing AI image is absent from this review.</p></details>
+    </section>
+
+    <section id="video" class="review-section video-section">
+      <div><h2>Motion, with<br>real photographs.</h2><p>No original video footage was found in the supplied Photoshoot Photos folder. This optional silent montage uses three of the actual photographs; it is a slideshow direction, not match footage or AI animation.</p><p>For a production hero, keep it muted and short, use a poster image, provide a pause button and show the still photograph when reduced motion or data saving is requested. Portrait footage belongs in the split composition; a wide film needs an actual landscape source.</p><p><strong>Recommendation:</strong> launch with the selected still. Upgrade to a real 8–12 second film when suitable club footage is supplied.</p><a href="media/phoenix-photo-montage.mp4" class="outline-button" download>Download montage preview</a></div>
+      <video controls muted loop playsinline preload="none" poster="media/DSC09915.jpg" aria-label="Silent montage preview made from three supplied Phoenix photographs"><source src="media/phoenix-photo-montage.mp4" type="video/mp4"></video>
+    </section>
+
+    <section id="plan" class="review-section plan-section">
+      <div class="review-intro"><div><h2>The source.<br>The build. The checks.</h2><p>Research completed 1 November 2026. Recommendation: use UAEFA for Phoenix’s custom fixture cards, with an explicit check of live timing before production release.</p></div></div>
+      <h3>What the two sources actually offer</h3>
+      <div class="table-wrap"><table><caption>UAEFA and Sofascore comparison</caption><thead><tr><th scope="col">Requirement</th><th scope="col">UAEFA</th><th scope="col">Sofascore</th></tr></thead><tbody>
+        <tr><th scope="row">Phoenix coverage</th><td>Directly verified: club 961, competition 2574, season 59. All 32 fixtures, seven completed results, venues and rescheduled dates.</td><td>Phoenix team page and past match goal events are publicly visible. This confirms coverage, not the speed or completeness of every match.</td></tr>
+        <tr><th scope="row">Data integration</th><td>Website JSON routes returned data without a key during this investigation. They are website endpoints, not a documented developer product or guaranteed service.</td><td>Official FAQ says a sports-data API is not offered because of provider agreements. Do not build the custom calendar against an unofficial scraper.</td></tr>
+        <tr><th scope="row">Keep Phoenix’s cards</th><td>Yes: map official match IDs to Phoenix’s own crests, dates, scores and status labels.</td><td>Official widgets keep Sofascore’s presentation. A particular team-results widget for this league still needs confirming; it is not a drop-in source for Phoenix’s custom cards.</td></tr>
+        <tr><th scope="row">Live behaviour</th><td>Score fields, match status and an update route exist. Goal events verified for a completed Phoenix match. Actual in-play cadence remains unmeasured.</td><td>Official widgets are described as updating live. No independently measured delay for Phoenix was established here.</td></tr>
+        <tr><th scope="row">Cost / access</th><td>No API key or payment was needed for the read-only research requests. Public reachability does not establish a permanent free API or production permission.</td><td>Official widgets are advertised as free. API access is unavailable through their stated public offering.</td></tr>
+        <tr><th scope="row">Production condition</th><td>Confirm with the club/UAEFA that this website route is covered by their permitted feed use and agree a suitable request rate. Retain attribution and a source link.</td><td>Use the supplied official embed if its coverage and layout fit, or request an authorised data arrangement. No silent scraping fallback.</td></tr>
+      </tbody></table></div>
+      <div class="research-verdict"><h3>Use UAEFA first.</h3><p>It already has the match IDs stored in Phoenix’s current calendar, so results can attach to the correct cards without guessing team names. Sofascore is a useful coverage comparison and an optional official embed, but its public offering does not give us the data access needed for this exact design.</p></div>
+
+      <h3>Do we need a scraper?</h3>
+      <p>No HTML scraper is needed for the current connection. UAEFA’s own website reads structured JSON from a website endpoint, and this local server reads that same data, validates it, caches it and passes it to Phoenix’s cards. It is technically an internal API; what is missing is a documented, supported public API offering. Sofascore’s supported external option is its official widget. If UAEFA changes its endpoint, keep the last successful results while repairing the connection or arranging an authorised feed; do not silently substitute an unofficial Sofascore scraper.</p>
+      <h3>Verified endpoints and evidence</h3>
+      <ul class="evidence-list">
+        <li><a href="https://www.uaefa.ae/api/matches?lang=en&amp;club_id=961" target="_blank" rel="noreferrer">Phoenix season: matches?lang=en&amp;club_id=961</a><p>Verified 32 unique match IDs. Finished matches return status 6; scheduled matches return status 2. Other status IDs must be checked against real examples before assigning labels.</p></li>
+        <li><a href="https://www.uaefa.ae/api/matches_updates_match?lang=en&amp;match_id=81981" target="_blank" rel="noreferrer">Phoenix–ISE match status: match 81981</a><p>The update endpoint returns a status text and a change counter. Its response timestamp is not proof of when a goal happened or when it reached UAEFA.</p></li>
+        <li><a href="https://www.uaefa.ae/api/match_highlights2?lang=en&amp;match_id=81981" target="_blank" rel="noreferrer">Phoenix–ISE match timeline: match 81981</a><p>Verified final score 1–1, with goal events at 4 and 58 minutes. Historical event minutes establish available detail; they do not establish live delivery speed.</p></li>
+        <li><a href="https://www.uaefa.ae/api/matches?lang=ar&amp;club_id=961" target="_blank" rel="noreferrer">Arabic season response</a><p>Arabic team and venue names were verified. Production keeps UAE/GST kickoff time, Arabic layout and source-provided translated names.</p></li>
+      </ul>
+      <p>Schedule correction found: match 81921, PASS–Phoenix, is now 29 January 2027 at 17:15 GST. The current site still has 4 September 2026. The integration must update schedules as well as scores.</p>
+
+      <h3>Exact visitor experience</h3>
+      <ol class="plan-list">
+        <li><strong>Open the existing Club fixture section.</strong> Keep the existing heading, club crests, black/bone/gold styling and horizontal cards. Start with the current confirmed in-play match; otherwise start with the latest completed match. Upcoming matches follow in kickoff order.</li>
+        <li><strong>Place the scores below the logos.</strong> Show a score only when the source provides one. A future match displays “VS” and kickoff time. Labels distinguish Live, Half-time, Full-time, Postponed and Cancelled only when source data supports them. Never manufacture 0–0 or a running minute from the clock.</li>
+        <li><strong>Add “View past matches” beside the scroll hint.</strong> This is a real button with an expanded state. It reveals the season’s results directly below the main strip, newest first; it does not send the visitor to another site.</li>
+        <li><strong>Refresh without moving the visitor.</strong> Update the scores in place, preserve the selected card and horizontal scroll, and pause browser polling in hidden tabs. Show “Last checked” and a clear saved-results state if the source fails.</li>
+        <li><strong>Replace the AI hero with the selected real photo.</strong> Preserve the existing copy and official artwork. Prepare deliberate desktop and mobile crops, or use the split composition to keep the whole subject visible. Keep Arabic copy away from faces and shirt crests.</li>
+      </ol>
+
+      <h3>Production implementation</h3>
+      <ol class="plan-list">
+        <li><strong>Server feed — add <code>app/api/fixtures/route.ts</code> and a small normalizer.</strong> Fetch the fixed UAEFA host on the server; accept no caller-supplied destination. Filter Phoenix club 961 and league 2574, validate IDs, score integers, status and timestamps. Convert source GST into explicit timestamps and preserve zero versus missing scores.</li>
+        <li><strong>Shared cache and last good result.</strong> Store one validated season snapshot in the existing D1 environment, with retrieval time and season ID. Refresh on demand using a shared lease so concurrent visitors do not multiply upstream requests. Serve the previous snapshot when validation or the source fails. Use a source timeout, bounded response size and increasing retry delay.</li>
+        <li><strong>Matchday cadence.</strong> Proposed upstream ceiling: one shared check per 30 seconds around a match, adjusted to UAEFA’s agreed rate and observed updates. Between matches, refresh schedules about every 15 minutes. The browser checks our cached endpoint, never UAEFA directly. If nobody is viewing, no continuous process is required; the next visitor triggers a freshness check.</li>
+        <li><strong>Calendar — update <code>app/components/fixture-calendar.tsx</code> and its CSS.</strong> Reuse the existing opponent crest map and stable match IDs. Add score/status display, upcoming/latest ordering, the inline results disclosure, accessible scroll controls and a narrow-screen layout. Keep the current source file as a clearly dated emergency schedule seed, not an invented result source.</li>
+        <li><strong>Language and hero.</strong> Add the new labels to <code>app/components/language-controller.tsx</code>; check RTL controls and both team orders. Update the hero asset in <code>app/page.tsx</code>, its responsive image rules and alt text after the photo is selected. Export WebP/AVIF with a mobile crop; keep originals outside the public build.</li>
+        <li><strong>Release and rollback.</strong> Review the local result, verify the supported source arrangement and observe a matchday, then publish the agreed change. Retain the prior hero and static calendar version for a quick rollback. The local server in this folder is a review tool, not the deployed application.</li>
+      </ol>
+
+      <h3>Acceptance checks before release</h3>
+      <ul class="check-list"><li>32 unique fixtures map to the right opponents and source IDs; PASS uses its corrected date.</li><li>Latest completed match is Phoenix 1–1 ISE; missing scores remain missing, and 0 remains a valid goal count.</li><li>Past-match control works by keyboard, announces its state and reveals all seven completed league matches.</li><li>Observe kickoff, a goal, half-time and full-time during a real Phoenix game. Record the source update and the website display time separately.</li><li>Confirm a postponed or cancelled fixture does not appear as live solely because kickoff has passed.</li><li>Simulate timeout, malformed JSON and concurrent visitors; retain last good scores and show honest freshness.</li><li>Check desktop, narrow mobile and Arabic: complete faces, team order, legible scores, visible focus and no page overflow.</li><li>For optional video, verify poster fallback, pause, reduced motion, muted playback and loading cost.</li></ul>
+      <p><strong>Current review scope:</strong> the preview connects to UAEFA and caches locally. It includes real results and fixture sorting. It does not establish a full production status dictionary, a permitted production request rate, or live goal timing. No production site has been changed.</p>
+
+      <h3>Primary research sources</h3>
+      <ul class="sources"><li><a href="https://www.uaefa.ae/en/footer/Terms_and_conditions" target="_blank" rel="noreferrer">UAEFA terms, especially feed use and service availability</a> — the terms distinguish feeds from general site copying. Confirm that the proposed JSON route is an approved feed before public operation.</li><li><a href="https://sofascore.helpscoutdocs.com/article/129-sports-data-api-availability" target="_blank" rel="noreferrer">Sofascore’s official API availability FAQ</a> — says API endpoints are not shared because of data-provider agreements.</li><li><a href="https://corporate.sofascore.com/widgets" target="_blank" rel="noreferrer">Sofascore’s official widgets page</a> — describes free, updating embeds, not a custom data API.</li><li><a href="https://www.sofascore.com/football/team/phoenix-united/1260089" target="_blank" rel="noreferrer">Phoenix United on Sofascore</a> — verifies team coverage.</li></ul>
+    </section>
+  </main>
+  <footer class="review-footer">Phoenix United · Local review · 1 November 2026 <a href="#preview">Back to the preview</a></footer>
+  <dialog id="photo-dialog"><button type="button" id="close-photo" aria-label="Close photo">Close</button><img id="full-photo" src="media/DSC09915.jpg" alt="Selected Phoenix United photograph"><p id="full-caption"></p></dialog>
+</body>
+</html>
