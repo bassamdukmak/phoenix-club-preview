@@ -55,7 +55,7 @@ for _, card in sorted(upcoming, key=lambda pair: pair[0]):
 for _, card in past:
     results.append(card)
 section.summary.string = f'View past matches ({len(past)})'
-section.select_one('p:last-child').string = (
+section.select_one(':scope > p:last-child').string = (
     'UAEFA fixtures checked · ' + datetime.now().astimezone().strftime('%d %B %Y, %H:%M %Z')
 )
 page.write_text(str(soup))
